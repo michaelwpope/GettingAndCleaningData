@@ -28,160 +28,193 @@ A script called "run_analysis.R" was created to read the various data files and 
 Variable names used in the tidy data set are described using the following convention :
 
 variable name
-    variable type
-        variable description
-            allowable values
+variable type
+variable description
+allowable values
 
 Variable names included in the tidy data set are :
 
 subject
-    numeric
-        subject identifier number
-            1 to 30
+numeric
+subject identifier number
+1 to 30
 
 activity
-    character
-        activity being performed at the time of the measurement
-            "WALKING
+character
+activity being performed at the time of the measurement
+"WALKING
 ", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
 
 Mean_of_time_Body_Accelerometer_mean_X,Y,Z
-    numeric
-        Mean of mean of Accelerometer time domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Accelerometer time domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Accelerometer time domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Accelerometer time domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Gravity_Accelerometer_mean_X,Y,Z
-    numeric
-        Mean of mean of Accelerometer time domain signal of Gravity component of movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Accelerometer time domain signal of Gravity component of movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Gravity_Accelerometer_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Accelerometer time domain signal of Gravity component of movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Accelerometer time domain signal of Gravity component of movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Jerk_mean_X,Y,Z
-    numeric
-        Mean of mean of Accelerometer time domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Accelerometer time domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Jerk_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Accelerometer time domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Accelerometer time domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_mean_X,Y,Z
-    numeric
-        Mean of mean of Gyroscope time domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Gyroscope time domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Gyroscope time domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Gyroscope time domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Jerk_mean_X,Y,Z
-    numeric
-        Mean of mean of Gyroscope time domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Gyroscope time domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Jerk_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Gyroscope time domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Gyroscope time domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Accelerometer time domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Accelerometer time domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Accelerometer time domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Accelerometer time domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_time_Gravity_Accelerometer_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Accelerometer time domain signal of Gravity component of movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Accelerometer time domain signal of Gravity component of movement
+-1.0 to +1.0
+
 Mean_of_time_Gravity_Accelerometer_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Accelerometer time domain signal of Gravity component of movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Accelerometer time domain signal of Gravity component of movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Jerk_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Accelerometer time domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Accelerometer time domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Accelerometer_Jerk_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Accelerometer time domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Accelerometer time domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Gyroscope time domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Gyroscope time domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Gyroscope time domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Gyroscope time domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Jerk_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Gyroscope time domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Gyroscope time domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_time_Body_Gyroscope_Jerk_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Gyroscope time domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Gyroscope time domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_mean_X,Y,Z
-    numeric
-        Mean of mean of Accelerometer frequency domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Accelerometer frequency domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Accelerometer frequency domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Accelerometer frequency domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_Jerk_mean_X,Y,Z
-    numeric
-        Mean of mean of Accelerometer frequency domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Accelerometer frequency domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_Jerk_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Accelerometer frequency domain signal of Body Jerk movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Accelerometer frequency domain signal of Body Jerk movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Gyroscope_mean_X,Y,Z
-    numeric
-        Mean of mean of Gyroscope frequency domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of mean of Gyroscope frequency domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Gyroscope_std_X,Y,Z
-    numeric
-        Mean of standard deviation of Gyroscope frequency domain signal of Body movement in the x,Y,Z direction
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Gyroscope frequency domain signal of Body movement in the x,Y,Z direction
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Accelerometer frequency domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Accelerometer frequency domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Accelerometer_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Accelerometer frequency domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Accelerometer frequency domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Accelerometer_Jerk_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Accelerometer frequency domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Accelerometer frequency domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Accelerometer_Jerk_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Accelerometer frequency domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Accelerometer frequency domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Gyroscope_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Gyroscope frequency domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Gyroscope frequency domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Gyroscope_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Gyroscope frequency domain signal of Body movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Gyroscope frequency domain signal of Body movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Gyroscope_Jerk_Magnitude_mean
-    numeric
-        Mean of mean of Magnitude of Gyroscope frequency domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of mean of Magnitude of Gyroscope frequency domain signal of Body Jerk movement
+-1.0 to +1.0
+
 Mean_of_frequency_Body_Body_Gyroscope_Jerk_Magnitude_std
-    numeric
-        Mean of standard deviation of Magnitude of Gyroscope frequency domain signal of Body Jerk movement
-            -1.0 to +1.0
+numeric
+Mean of standard deviation of Magnitude of Gyroscope frequency domain signal of Body Jerk movement
+-1.0 to +1.0
 
 
 ### License
@@ -193,3 +226,4 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
